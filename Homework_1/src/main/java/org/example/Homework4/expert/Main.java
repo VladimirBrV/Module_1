@@ -16,7 +16,7 @@ package org.example.Homework4.expert;
 // Давайте посмотрим другое авто? (Вызвано из объекта CarShop)
 public class Main {
     public static void main(String[] args)  {
-        Car car = new Car(-100);
+        Car car = new Car(5000);
         CarShope carShope = new CarShope(car);
         try {
             carShope.sellCar();

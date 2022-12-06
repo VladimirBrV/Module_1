@@ -6,10 +6,9 @@ public class Watch  {
         this.work = work;
     }
     public void Tik () throws WatchBrokenError {
-        if (work) {
+        if (!work) {
             throw new WatchBrokenError("Ошибка часы сломаны");}
-        else if (work) {
-                System.out.println("Часы тикают");
+        if (work) {System.out.println("Часы тикают");
         }
     }
 }
