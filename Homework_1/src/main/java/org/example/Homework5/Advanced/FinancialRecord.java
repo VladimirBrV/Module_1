@@ -26,12 +26,5 @@ public class FinancialRecord {
         this.outcomes = outcomes;
     }
 
-    @Override
-    public String toString() {
-        return "FinancialRecord{" +
-                "incomes=" + incomes +
-                ", outcomes=" + outcomes +
-                '}';
-    }
 }
 
