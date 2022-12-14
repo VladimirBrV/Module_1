@@ -15,13 +15,13 @@ package org.example.Homework4.expert;
 // Неизвестна мне - (выдано из объекта CarShop)
 // Давайте посмотрим другое авто? (Вызвано из объекта CarShop)
 public class Main {
-    public static void main(String[] args)  {
-        Car car = new Car(5000);
+    public static void main(String[] args) {
+        Car car = new Car(-100);
         CarShope carShope = new CarShope(car);
         try {
             carShope.sellCar();
-        } catch (PriceIsNull e) {
-            System.out.println(e.getMessage());
+        } catch (PriceIsNull priceIsNull) {
+            System.out.println(priceIsNull.getMessage());
         }
     }
-    }
+}
